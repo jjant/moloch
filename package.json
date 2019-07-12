@@ -28,6 +28,7 @@
     "test": "bash scripts/test.sh",
     "gcli": "ganache-cli -l 8000000 -m \"fetch local valve black attend double eye excite planet primary install allow\"",
     "lint:tests": "eslint test/*.js",
+    "lint:scripts": "eslint scripts/*.js",
     "coverage": "SOLIDITY_COVERAGE=true bash scripts/test.sh"
   },
   "repository": {
@@ -40,5 +41,8 @@
   "bugs": {
     "url": "https://github.com/MolochVentures/moloch/issues"
   },
-  "homepage": "https://github.com/MolochVentures/moloch#readme"
+  "homepage": "https://github.com/MolochVentures/moloch#readme",
+  "dependencies": {
+    "console.table": "^0.10.0"
+  }
 }

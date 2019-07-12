@@ -3,7 +3,7 @@ usePlugin('@nomiclabs/buidler-truffle5')
 require('./scripts/moloch-tasks')
 require('./scripts/pool-tasks')
 
-const INFURA_API_KEY = ''
+const INFURA_API_KEY = '6c5c845fc44a43de870420f0af9a60bd'
 const MAINNET_PRIVATE_KEY = ''
 const ROPSTEN_PRIVATE_KEY = ''
 
@@ -25,7 +25,7 @@ module.exports = {
     },
     mainnet: {
       url: `https://mainnet.infura.io/v3/${INFURA_API_KEY}`,
-      accounts: [ MAINNET_PRIVATE_KEY ],
+      accounts: [ ],
       deployedContracts: {
         moloch: '0x1fd169A4f5c59ACf79d0Fd5d91D1201EF1Bce9f1', // The original Moloch
         pool: ""
