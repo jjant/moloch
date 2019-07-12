@@ -21,7 +21,8 @@
     "prompt-confirm": "^2.0.4",
     "solidity-coverage": "github:rotcivegaf/solidity-coverage#5875f5b7bc74d447f3312c9c0e9fc7814b482477",
     "standard": "^11.0.0",
-    "web3": "1.0.0-beta.37"
+    "web3": "1.0.0-beta.37",
+    "console.table": "^0.10.0"
   },
   "scripts": {
     "compile": "buidler compile",
@@ -41,8 +42,5 @@
   "bugs": {
     "url": "https://github.com/MolochVentures/moloch/issues"
   },
-  "homepage": "https://github.com/MolochVentures/moloch#readme",
-  "dependencies": {
-    "console.table": "^0.10.0"
-  }
+  "homepage": "https://github.com/MolochVentures/moloch#readme"
 }

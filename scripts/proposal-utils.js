@@ -68,8 +68,8 @@ function extractDetails (proposal) {
   try {
     const jsonDetails = JSON.parse(proposal.details)
 
-    if (typeof jsonDetails !== 'object') {
-      throw new Error()
+    if (typeof jsonDetails !== 'object' || jsonDetails.title === undefined || jsonDetails.description === undefined) {
+      throw new Error(`Proposal details is not a valid JSON object with properties "title" and "description": ${jsonDetails}`)
     }
 
     title = jsonDetails.title
